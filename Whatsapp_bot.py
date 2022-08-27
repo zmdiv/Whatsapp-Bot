@@ -1,13 +1,14 @@
-import pywhatkit
+import pywhatkit  # in order the library to work Flask should also be installed
 
-
+# sending message instantly
 def send_instant():
     destination_num = input('Enter the number where to send: ')
     message = input('enter the text: ')
 
     pywhatkit.sendwhatmsg_instantly(destination_num, message)
 
-
+    
+# programming to send the message
 def send_later():
     destination_num = input('Enter the number where to send: ')
     message = input('enter the text: ')
